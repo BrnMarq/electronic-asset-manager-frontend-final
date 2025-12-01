@@ -64,7 +64,7 @@ export default function Assets() {
 	// Lógica de permisos para el botón de crear
 	const roleName =
 		user?.role && typeof user.role === "object" ? user.role.name : user?.role;
-	const canCreate = roleName === "admin" || roleName === "manager";
+	const canCreate = roleName === "admin";
 
 	const itemsPerPage = 9;
 	const assets = assetsInfo.assets;
